@@ -1,0 +1,8 @@
+Tipos de variáveis
+
+boolean - lógica;
+int(byte, short, int e long) - inteiro;
+float - ponto flutuante;
+double - ponto flutuante maior;
+char - caracteres;
+String(S maiúsculo - classe) - vetor básico de caracteres com funções auxiliares.
