@@ -2,7 +2,7 @@ public class Cliente {
 
     public String nome;
     public long cpf;
-    public float valor;
+    private float valor;
     public int []op = new int[3];
 
     Computador[]computador = new Computador[3];
