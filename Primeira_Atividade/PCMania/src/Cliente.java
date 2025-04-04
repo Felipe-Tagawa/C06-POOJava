@@ -10,7 +10,7 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-
+    // Calcula o valor atual e total dos computadores comprados:
     public float calculaTotalCompra(){
         for(Computador comp : computadores){
             if(comp != null) {
