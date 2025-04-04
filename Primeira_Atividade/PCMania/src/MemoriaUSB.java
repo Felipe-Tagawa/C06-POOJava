@@ -10,4 +10,12 @@ public class MemoriaUSB {
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getCapacidade() {
+        return capacidade;
+    }
 }

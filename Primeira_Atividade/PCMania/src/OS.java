@@ -10,4 +10,12 @@ public class OS {
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
 }
