@@ -1,7 +1,7 @@
-public class UsuarioPersona extends SerHumano{
+public abstract class UsuarioPersona extends SerHumano{
 
-    public int nivel;
-    public String Arcana;
+    private int nivel;
+    private String arcana;
     Personas personas;
 
     public UsuarioPersona(String nome, int idade, String genero) {
@@ -34,15 +34,23 @@ public class UsuarioPersona extends SerHumano{
     public void mostraInfoPersona(){
         System.out.println("Informações da Persona: ");
         System.out.println();
-        System.out.println("Nome: (" + personas.nome +
-                ") ::> Nível: (" + personas.nivel +
-                ") ::> Arcana: (" + personas.Arcana +
-                ") ::> Tipos: (" + personas.tipo[0] + ", " + personas.tipo[1] + ")"
+        System.out.println("Nome: (" + personas.getNome() +
+                ") :: Nível: (" + personas.getNivel() +
+                ") :: Arcana: (" + personas.getArcana() +
+                ") :: Tipos: (" + personas.getTipo()[0] + ", " + personas.getTipo()[1] + ")"
         );
+        System.out.println();
     }
 
     public void evoluirPersona(){
 
     }
 
+    public String getArcana() {
+        return arcana;
+    }
+
+    public void setArcana(String Arcana) {
+        this.arcana = Arcana;
+    }
 }

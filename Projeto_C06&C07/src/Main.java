@@ -1,7 +1,8 @@
 public class Main {
+
     public static void main(String[] args) {
         Protagonista protagonista = new Protagonista("Makoto Yuki", 17, "Masculino");
-        Personas[] persona = new Personas[10]; // Inicialmente somente 10.
+        // Personas[] persona = new Personas[10]; // Inicialmente somente 10.
 
         // Tipos de personas para o protagonista
         String[][] tiposPersonaProtagonista = {
@@ -30,20 +31,20 @@ public class Main {
 
         // Heróis(SEES):
         Usuarios[] user = new Usuarios[12]; // Por enquanto há 12 usuários.
-        user[0] = new Usuarios("Yukari", 16, "Feminino", "Healer", false);
-        user[1] = new Usuarios("Mitsuru", 18, "Feminino", "Ice Caster", false);
-        user[2] = new Usuarios("Junpei Iori", 17, "Masculino", "Slash Attacker", false);
-        user[3] = new Usuarios("Akihiko Sanada", 18, "Masculino", "Electric Striker / Boxer", false);
-        user[4] = new Usuarios("Fuuka Yamagishi", 16, "Feminino", "Support / Navigator", false);
-        user[5] = new Usuarios("Aigis", 17, "Feminino", "Gunner / Tank", false);
-        user[6] = new Usuarios("Koromaru", 10, "Masculino", "Dark/Fire User", false);
-        user[7] = new Usuarios("Ken Amada", 10, "Masculino", "Light/Lance User", false);
-        user[8] = new Usuarios("Shinjiro Aragaki", 18, "Masculino", "Brute Physical Attacker", false);
+        user[0] = new Usuarios("Yukari", 16, "Feminino", "Healer", false, "Lovers");
+        user[1] = new Usuarios("Mitsuru", 18, "Feminino", "Ice Caster", false, "Empress");
+        user[2] = new Usuarios("Junpei Iori", 17, "Masculino", "Slash Attacker", false, null);
+        user[3] = new Usuarios("Akihiko Sanada", 18, "Masculino", "Electric Striker / Boxer", false, null );
+        user[4] = new Usuarios("Fuuka Yamagishi", 16, "Feminino", "Support / Navigator", false, "Priestess");
+        user[5] = new Usuarios("Aigis", 17, "Feminino", "Gunner / Tank", false, "Aeon");
+        user[6] = new Usuarios("Koromaru", 10, "Masculino", "Dark/Fire User", false, null);
+        user[7] = new Usuarios("Ken Amada", 10, "Masculino", "Light/Lance User", false, null);
+        user[8] = new Usuarios("Shinjiro Aragaki", 18, "Masculino", "Brute Physical Attacker", false, null);
 
         // Vilões (Strega):
-        user[9] = new Usuarios("Takaya Sakaki", 20, "Masculino", "Dark Caster / Líder da Strega", true);
-        user[10] = new Usuarios("Jin Shirato", 19, "Masculino", "Support Hacker / Tech", true);
-        user[11] = new Usuarios("Chidori Yoshino", 17, "Feminino", "Fire Caster / Emo Artista", true);
+        user[9] = new Usuarios("Takaya Sakaki", 20, "Masculino", "Dark Caster / Líder da Strega", true, null);
+        user[10] = new Usuarios("Jin Shirato", 19, "Masculino", "Support Hacker / Tech", true, null);
+        user[11] = new Usuarios("Chidori Yoshino", 17, "Feminino", "Fire Caster / Emo Artista", true, null);
 
         // Tipos de personas para cada usuário:
         String[][] tiposUsuarios = {
@@ -79,7 +80,15 @@ public class Main {
         user[11].addPersona(new Personas("Medea", 50, "Hanged Man", tiposUsuarios[11]));
 
 
+        user[0].mostraInfoPersonagem();
         user[0].mostraInfoPersona();
+
+        protagonista.mostraInfoPersonagem();
+
+        // Adicionar os Confidants(NPCs):
+
+
+        // Adicionar habilidades das personas:
 
     }
 }

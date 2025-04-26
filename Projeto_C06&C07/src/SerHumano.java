@@ -12,8 +12,8 @@ public abstract class SerHumano {
         this.genero = genero;
     }
 
-    // Criar métodos abstratos?
-
     public abstract void interagir();
+
+    public abstract void mostraInfoPersonagem();
 
 }

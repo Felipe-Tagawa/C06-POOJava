@@ -1,12 +1,20 @@
 public class NPC extends SerHumano {
 
-    public NPC(String nome, int idade, String genero) {
+    String arcana;
+
+    public NPC(String nome, int idade, String genero, String arcana) {
         super(nome, idade, genero);
+        this.arcana = arcana;
     }
 
     @Override
     public void interagir() {
         System.out.println("NPC" + nome + " interage!");
+    }
+
+    @Override
+    public void mostraInfoPersonagem() {
+
     }
 
     public void conversar(){
