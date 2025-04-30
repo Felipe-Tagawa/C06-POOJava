@@ -5,7 +5,6 @@ public abstract class SerHumano {
     protected int idade;
     protected String genero;
 
-    // Falta construtor no UML.
     public SerHumano(String nome, int idade, String genero) {
         this.nome = nome;
         this.idade = idade;

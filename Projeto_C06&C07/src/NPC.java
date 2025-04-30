@@ -1,10 +1,12 @@
 public class NPC extends SerHumano {
 
-    String arcana;
+    private String arcana;
+    private String ocupação;
 
-    public NPC(String nome, int idade, String genero, String arcana) {
+    public NPC(String nome, int idade, String genero, String ocupacao, String arcana) {
         super(nome, idade, genero);
         this.arcana = arcana;
+        this.ocupação = ocupacao;
     }
 
     @Override

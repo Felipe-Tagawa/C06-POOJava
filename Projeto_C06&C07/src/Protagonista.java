@@ -2,9 +2,18 @@ public class Protagonista extends UsuarioPersona{
 
     Personas[] personas; // O protagonista pode ter mais de uma persona.
 
-    public Protagonista(String nome, int idade, String genero) {
-        super(nome, idade, genero);
+    // N fiz as composições ou agregações:
+    Equipamento[] equipamento;
+    Arma[] arma;
+
+    public Protagonista(String nome, int idade, String genero, int nivel) {
+        super(nome, idade, genero, nivel);
         this.personas = new Personas[10];
+    }
+
+    @Override
+    public void usarPersona() {
+
     }
 
     @Override
